@@ -4,21 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Sign-Up</h1>
     <form action="#" method="post">
         <fieldset>
-            <legend>sign up</legend>
-            <div>            
-                <label for="fname">First Name: </label>
-                <input type="text" id="fname" placeholder="First Name" required>
+            <legend>Sign Up form</legend>
+            <div class="form_content">
+                <div>            
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" placeholder="First Name" required>
+                </div>
+                <div>
+                    <label for="lname">Last Name: </label>
+                    <input type="text" name="Last Name" id="lname" placeholder="Last Name">
+                </div>
+                <div>
+                    <label for="dob">Date of Birth(DOB): </label>
+                    <input type="Date" name="Date of Birth" id="dob" required>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="Email" id="email" placeholder="example@gmail.com" required>
+                </div>
+                <div>
+                    <label for="confirm-email">Confirm Email: </label>
+                    <input type="email" name="Reenter Email" id="confirm-email" placeholder="example@gmail.com" required>
+                </div>
+                <div>
+                    <label for="password">Set Password: </label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div>
+                    <label for="confirm-password">Re-enter Password: </label>
+                    <input type="password" name="password" id="confirm-password" required>
+                </div>
+                <div class="check">
+                    <span>
+                        <input type="checkbox" id="confirmation" required>
+                        <label for="confirmation">I want to Sign up</label>
+
+                    </span>                    
+
+
+                </div>
+                <div class="submit-btn">
+                    <button type="submit" >Sign Up</button>
+                </div>
+    
+
             </div>
-            <div>
-                <label for="lname">Last Name: </label>
-                <input type="text" name="Last Name" id="lname" placeholder="Last Name">
-            </div>
+            
 
             
 
